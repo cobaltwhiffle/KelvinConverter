@@ -1,0 +1,18 @@
+//To convert Kelvin to Celsius and Fahrenheit we need a temperature in Kelvin use for convertion 
+const kelvin = 293
+
+//Celsius is 273 degrees less than Kelvin, why we will subtract 273 from the kelvin variable to get the temperature in Celsius
+let celsius = (kelvin - 273);
+
+//Equation to convert Celsius to Fahrenheit, output of equation is 68. To avoid decimals Math.floor() is used
+let fahrenheit = Math.floor(celsius * (9 / 5) + 32);
+
+console.log(`The temperature is ${fahrenheit} degrees fahrenheit.`);
+//Output: The temperature is 68 degrees fahrenheit.
+
+//If the value of the kelvin variable is changed to 0 the output will be -460 degrees fahrenheit 
+
+//Convert Celsius to Newton scale using the equation below
+let newton = Math.floor(celsius * (33 / 100));
+console.log(`The temperature is ${newton} degrees Newton`);
+//Output: The temperature is 6 degrees Newton 
